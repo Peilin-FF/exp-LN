@@ -1,0 +1,8 @@
+
+[34m[1mwandb[39m[22m: logging graph, to disable use `wandb.watch(log_graph=False)`
+>>>>>>>start training : electricity_Mamba2_LN_192_96_4e-3_Mamba2_LN_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl2_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.004_type8_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18125
+val 2537
+test 5165
+Epoch: 1, Steps: 566 | Train Loss: 0.3783849 Vali Loss: 0.2199562 Test Loss: 0.2916446
+Validation loss decreased (inf --> 0.219956).  Saving model ...

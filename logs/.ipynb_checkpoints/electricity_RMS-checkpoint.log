@@ -1,0 +1,1113 @@
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_96_4e-5', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=96, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=4e-05, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_96_4e-5_Mamba2_RMS_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_4e-05_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18125
+val 2537
+test 5165
+Epoch: 1, Steps: 566 | Train Loss: 0.8272752 Vali Loss: 0.5762329 Test Loss: 0.6452299
+Validation loss decreased (inf --> 0.576233).  Saving model ...
+Updating learning rate to 4e-05
+Epoch: 2, Steps: 566 | Train Loss: 0.5151803 Vali Loss: 0.4201584 Test Loss: 0.4875623
+Validation loss decreased (0.576233 --> 0.420158).  Saving model ...
+Updating learning rate to 2e-05
+Epoch: 3, Steps: 566 | Train Loss: 0.4070326 Vali Loss: 0.3748648 Test Loss: 0.4431790
+Validation loss decreased (0.420158 --> 0.374865).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 4, Steps: 566 | Train Loss: 0.3703436 Vali Loss: 0.3571239 Test Loss: 0.4258101
+Validation loss decreased (0.374865 --> 0.357124).  Saving model ...
+Updating learning rate to 5e-06
+Epoch: 5, Steps: 566 | Train Loss: 0.3547823 Vali Loss: 0.3502409 Test Loss: 0.4184355
+Validation loss decreased (0.357124 --> 0.350241).  Saving model ...
+Updating learning rate to 2.5e-06
+Epoch: 6, Steps: 566 | Train Loss: 0.3473169 Vali Loss: 0.3465485 Test Loss: 0.4146392
+Validation loss decreased (0.350241 --> 0.346548).  Saving model ...
+Updating learning rate to 1.25e-06
+Epoch: 7, Steps: 566 | Train Loss: 0.3435758 Vali Loss: 0.3442148 Test Loss: 0.4128141
+Validation loss decreased (0.346548 --> 0.344215).  Saving model ...
+Updating learning rate to 6.25e-07
+Epoch: 8, Steps: 566 | Train Loss: 0.3415815 Vali Loss: 0.3433912 Test Loss: 0.4119648
+Validation loss decreased (0.344215 --> 0.343391).  Saving model ...
+Updating learning rate to 3.125e-07
+Epoch: 9, Steps: 566 | Train Loss: 0.3405993 Vali Loss: 0.3428291 Test Loss: 0.4112404
+Validation loss decreased (0.343391 --> 0.342829).  Saving model ...
+Updating learning rate to 1.5625e-07
+Epoch: 10, Steps: 566 | Train Loss: 0.3400738 Vali Loss: 0.3424633 Test Loss: 0.4110631
+Validation loss decreased (0.342829 --> 0.342463).  Saving model ...
+Updating learning rate to 7.8125e-08
+Epoch: 11, Steps: 566 | Train Loss: 0.3397913 Vali Loss: 0.3423651 Test Loss: 0.4109098
+Validation loss decreased (0.342463 --> 0.342365).  Saving model ...
+Updating learning rate to 3.90625e-08
+Epoch: 12, Steps: 566 | Train Loss: 0.3396634 Vali Loss: 0.3422561 Test Loss: 0.4108365
+Validation loss decreased (0.342365 --> 0.342256).  Saving model ...
+Updating learning rate to 1.953125e-08
+Epoch: 13, Steps: 566 | Train Loss: 0.3396242 Vali Loss: 0.3422906 Test Loss: 0.4108061
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 9.765625e-09
+Epoch: 14, Steps: 566 | Train Loss: 0.3396320 Vali Loss: 0.3422318 Test Loss: 0.4107817
+Validation loss decreased (0.342256 --> 0.342232).  Saving model ...
+Updating learning rate to 4.8828125e-09
+Epoch: 15, Steps: 566 | Train Loss: 0.3395836 Vali Loss: 0.3421155 Test Loss: 0.4107769
+Validation loss decreased (0.342232 --> 0.342115).  Saving model ...
+Updating learning rate to 2.44140625e-09
+Epoch: 16, Steps: 566 | Train Loss: 0.3395429 Vali Loss: 0.3422993 Test Loss: 0.4107750
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.220703125e-09
+Epoch: 17, Steps: 566 | Train Loss: 0.3396166 Vali Loss: 0.3422444 Test Loss: 0.4107744
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 6.103515625e-10
+Epoch: 18, Steps: 566 | Train Loss: 0.3396134 Vali Loss: 0.3422093 Test Loss: 0.4107742
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_96_4e-5_Mamba2_RMS_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_4e-05_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5165
+mse:0.4102681875228882, mae:0.4643867611885071
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_192_4e-5', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=192, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=4e-05, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_192_4e-5_Mamba2_RMS_custom_ftM_sl192_ll192_pl192_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_4e-05_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18029
+val 2441
+test 5069
+Epoch: 1, Steps: 563 | Train Loss: 0.8257118 Vali Loss: 0.5748531 Test Loss: 0.6442775
+Validation loss decreased (inf --> 0.574853).  Saving model ...
+Updating learning rate to 4e-05
+Epoch: 2, Steps: 563 | Train Loss: 0.5141730 Vali Loss: 0.4180608 Test Loss: 0.4868937
+Validation loss decreased (0.574853 --> 0.418061).  Saving model ...
+Updating learning rate to 2e-05
+Epoch: 3, Steps: 563 | Train Loss: 0.4057873 Vali Loss: 0.3730078 Test Loss: 0.4438223
+Validation loss decreased (0.418061 --> 0.373008).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 4, Steps: 563 | Train Loss: 0.3690335 Vali Loss: 0.3567238 Test Loss: 0.4281465
+Validation loss decreased (0.373008 --> 0.356724).  Saving model ...
+Updating learning rate to 5e-06
+Epoch: 5, Steps: 563 | Train Loss: 0.3533374 Vali Loss: 0.3481802 Test Loss: 0.4188892
+Validation loss decreased (0.356724 --> 0.348180).  Saving model ...
+Updating learning rate to 2.5e-06
+Epoch: 6, Steps: 563 | Train Loss: 0.3457263 Vali Loss: 0.3446900 Test Loss: 0.4155962
+Validation loss decreased (0.348180 --> 0.344690).  Saving model ...
+Updating learning rate to 1.25e-06
+Epoch: 7, Steps: 563 | Train Loss: 0.3419062 Vali Loss: 0.3426621 Test Loss: 0.4139364
+Validation loss decreased (0.344690 --> 0.342662).  Saving model ...
+Updating learning rate to 6.25e-07
+Epoch: 8, Steps: 563 | Train Loss: 0.3400024 Vali Loss: 0.3415750 Test Loss: 0.4128689
+Validation loss decreased (0.342662 --> 0.341575).  Saving model ...
+Updating learning rate to 3.125e-07
+Epoch: 9, Steps: 563 | Train Loss: 0.3389022 Vali Loss: 0.3410770 Test Loss: 0.4122863
+Validation loss decreased (0.341575 --> 0.341077).  Saving model ...
+Updating learning rate to 1.5625e-07
+Epoch: 10, Steps: 563 | Train Loss: 0.3383912 Vali Loss: 0.3409017 Test Loss: 0.4121034
+Validation loss decreased (0.341077 --> 0.340902).  Saving model ...
+Updating learning rate to 7.8125e-08
+Epoch: 11, Steps: 563 | Train Loss: 0.3381273 Vali Loss: 0.3406947 Test Loss: 0.4118695
+Validation loss decreased (0.340902 --> 0.340695).  Saving model ...
+Updating learning rate to 3.90625e-08
+Epoch: 12, Steps: 563 | Train Loss: 0.3379992 Vali Loss: 0.3405752 Test Loss: 0.4118601
+Validation loss decreased (0.340695 --> 0.340575).  Saving model ...
+Updating learning rate to 1.953125e-08
+Epoch: 13, Steps: 563 | Train Loss: 0.3379361 Vali Loss: 0.3405927 Test Loss: 0.4118231
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 9.765625e-09
+Epoch: 14, Steps: 563 | Train Loss: 0.3379005 Vali Loss: 0.3405584 Test Loss: 0.4118063
+Validation loss decreased (0.340575 --> 0.340558).  Saving model ...
+Updating learning rate to 4.8828125e-09
+Epoch: 15, Steps: 563 | Train Loss: 0.3378646 Vali Loss: 0.3404857 Test Loss: 0.4118004
+Validation loss decreased (0.340558 --> 0.340486).  Saving model ...
+Updating learning rate to 2.44140625e-09
+Epoch: 16, Steps: 563 | Train Loss: 0.3378642 Vali Loss: 0.3405600 Test Loss: 0.4117978
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.220703125e-09
+Epoch: 17, Steps: 563 | Train Loss: 0.3378959 Vali Loss: 0.3405255 Test Loss: 0.4117972
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 6.103515625e-10
+Epoch: 18, Steps: 563 | Train Loss: 0.3378742 Vali Loss: 0.3405677 Test Loss: 0.4117971
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_192_4e-5_Mamba2_RMS_custom_ftM_sl192_ll192_pl192_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_4e-05_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5069
+mse:0.4103770852088928, mae:0.4649244248867035
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_336_4e-5', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=336, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=4e-05, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_336_4e-5_Mamba2_RMS_custom_ftM_sl192_ll192_pl336_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_4e-05_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17885
+val 2297
+test 4925
+Epoch: 1, Steps: 558 | Train Loss: 0.8254381 Vali Loss: 0.5735435 Test Loss: 0.6403270
+Validation loss decreased (inf --> 0.573543).  Saving model ...
+Updating learning rate to 4e-05
+Epoch: 2, Steps: 558 | Train Loss: 0.5159817 Vali Loss: 0.4181789 Test Loss: 0.4836073
+Validation loss decreased (0.573543 --> 0.418179).  Saving model ...
+Updating learning rate to 2e-05
+Epoch: 3, Steps: 558 | Train Loss: 0.4080490 Vali Loss: 0.3742428 Test Loss: 0.4403461
+Validation loss decreased (0.418179 --> 0.374243).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 4, Steps: 558 | Train Loss: 0.3713436 Vali Loss: 0.3569850 Test Loss: 0.4239177
+Validation loss decreased (0.374243 --> 0.356985).  Saving model ...
+Updating learning rate to 5e-06
+Epoch: 5, Steps: 558 | Train Loss: 0.3556904 Vali Loss: 0.3491441 Test Loss: 0.4153645
+Validation loss decreased (0.356985 --> 0.349144).  Saving model ...
+Updating learning rate to 2.5e-06
+Epoch: 6, Steps: 558 | Train Loss: 0.3480208 Vali Loss: 0.3454527 Test Loss: 0.4111289
+Validation loss decreased (0.349144 --> 0.345453).  Saving model ...
+Updating learning rate to 1.25e-06
+Epoch: 7, Steps: 558 | Train Loss: 0.3441566 Vali Loss: 0.3433536 Test Loss: 0.4089607
+Validation loss decreased (0.345453 --> 0.343354).  Saving model ...
+Updating learning rate to 6.25e-07
+Epoch: 8, Steps: 558 | Train Loss: 0.3422183 Vali Loss: 0.3423508 Test Loss: 0.4079699
+Validation loss decreased (0.343354 --> 0.342351).  Saving model ...
+Updating learning rate to 3.125e-07
+Epoch: 9, Steps: 558 | Train Loss: 0.3411604 Vali Loss: 0.3416602 Test Loss: 0.4075539
+Validation loss decreased (0.342351 --> 0.341660).  Saving model ...
+Updating learning rate to 1.5625e-07
+Epoch: 10, Steps: 558 | Train Loss: 0.3406107 Vali Loss: 0.3415646 Test Loss: 0.4072788
+Validation loss decreased (0.341660 --> 0.341565).  Saving model ...
+Updating learning rate to 7.8125e-08
+Epoch: 11, Steps: 558 | Train Loss: 0.3403482 Vali Loss: 0.3412573 Test Loss: 0.4071293
+Validation loss decreased (0.341565 --> 0.341257).  Saving model ...
+Updating learning rate to 3.90625e-08
+Epoch: 12, Steps: 558 | Train Loss: 0.3402127 Vali Loss: 0.3413768 Test Loss: 0.4070447
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.953125e-08
+Epoch: 13, Steps: 558 | Train Loss: 0.3401645 Vali Loss: 0.3412323 Test Loss: 0.4070250
+Validation loss decreased (0.341257 --> 0.341232).  Saving model ...
+Updating learning rate to 9.765625e-09
+Epoch: 14, Steps: 558 | Train Loss: 0.3401538 Vali Loss: 0.3412073 Test Loss: 0.4070136
+Validation loss decreased (0.341232 --> 0.341207).  Saving model ...
+Updating learning rate to 4.8828125e-09
+Epoch: 15, Steps: 558 | Train Loss: 0.3401056 Vali Loss: 0.3411688 Test Loss: 0.4070056
+Validation loss decreased (0.341207 --> 0.341169).  Saving model ...
+Updating learning rate to 2.44140625e-09
+Epoch: 16, Steps: 558 | Train Loss: 0.3400933 Vali Loss: 0.3411717 Test Loss: 0.4070024
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.220703125e-09
+Epoch: 17, Steps: 558 | Train Loss: 0.3401278 Vali Loss: 0.3412538 Test Loss: 0.4070021
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 6.103515625e-10
+Epoch: 18, Steps: 558 | Train Loss: 0.3400810 Vali Loss: 0.3411982 Test Loss: 0.4070019
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_336_4e-5_Mamba2_RMS_custom_ftM_sl192_ll192_pl336_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_4e-05_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 4925
+mse:0.4068509638309479, mae:0.4639022648334503
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_720_4e-5', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=720, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=4e-05, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_720_4e-5_Mamba2_RMS_custom_ftM_sl192_ll192_pl720_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_4e-05_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17501
+val 1913
+test 4541
+Epoch: 1, Steps: 546 | Train Loss: 0.8249247 Vali Loss: 0.5733910 Test Loss: 0.6373069
+Validation loss decreased (inf --> 0.573391).  Saving model ...
+Updating learning rate to 4e-05
+Epoch: 2, Steps: 546 | Train Loss: 0.5195419 Vali Loss: 0.4256720 Test Loss: 0.4828316
+Validation loss decreased (0.573391 --> 0.425672).  Saving model ...
+Updating learning rate to 2e-05
+Epoch: 3, Steps: 546 | Train Loss: 0.4148310 Vali Loss: 0.3789035 Test Loss: 0.4392066
+Validation loss decreased (0.425672 --> 0.378903).  Saving model ...
+Updating learning rate to 1e-05
+Epoch: 4, Steps: 546 | Train Loss: 0.3779604 Vali Loss: 0.3614080 Test Loss: 0.4215029
+Validation loss decreased (0.378903 --> 0.361408).  Saving model ...
+Updating learning rate to 5e-06
+Epoch: 5, Steps: 546 | Train Loss: 0.3621184 Vali Loss: 0.3537250 Test Loss: 0.4135630
+Validation loss decreased (0.361408 --> 0.353725).  Saving model ...
+Updating learning rate to 2.5e-06
+Epoch: 6, Steps: 546 | Train Loss: 0.3544571 Vali Loss: 0.3502648 Test Loss: 0.4092067
+Validation loss decreased (0.353725 --> 0.350265).  Saving model ...
+Updating learning rate to 1.25e-06
+Epoch: 7, Steps: 546 | Train Loss: 0.3506015 Vali Loss: 0.3481453 Test Loss: 0.4074592
+Validation loss decreased (0.350265 --> 0.348145).  Saving model ...
+Updating learning rate to 6.25e-07
+Epoch: 8, Steps: 546 | Train Loss: 0.3486680 Vali Loss: 0.3471127 Test Loss: 0.4061941
+Validation loss decreased (0.348145 --> 0.347113).  Saving model ...
+Updating learning rate to 3.125e-07
+Epoch: 9, Steps: 546 | Train Loss: 0.3475335 Vali Loss: 0.3464918 Test Loss: 0.4056799
+Validation loss decreased (0.347113 --> 0.346492).  Saving model ...
+Updating learning rate to 1.5625e-07
+Epoch: 10, Steps: 546 | Train Loss: 0.3470344 Vali Loss: 0.3464078 Test Loss: 0.4054268
+Validation loss decreased (0.346492 --> 0.346408).  Saving model ...
+Updating learning rate to 7.8125e-08
+Epoch: 11, Steps: 546 | Train Loss: 0.3468050 Vali Loss: 0.3461957 Test Loss: 0.4053050
+Validation loss decreased (0.346408 --> 0.346196).  Saving model ...
+Updating learning rate to 3.90625e-08
+Epoch: 12, Steps: 546 | Train Loss: 0.3466223 Vali Loss: 0.3461182 Test Loss: 0.4052271
+Validation loss decreased (0.346196 --> 0.346118).  Saving model ...
+Updating learning rate to 1.953125e-08
+Epoch: 13, Steps: 546 | Train Loss: 0.3465467 Vali Loss: 0.3461702 Test Loss: 0.4051911
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 9.765625e-09
+Epoch: 14, Steps: 546 | Train Loss: 0.3465037 Vali Loss: 0.3460974 Test Loss: 0.4051734
+Validation loss decreased (0.346118 --> 0.346097).  Saving model ...
+Updating learning rate to 4.8828125e-09
+Epoch: 15, Steps: 546 | Train Loss: 0.3465082 Vali Loss: 0.3460923 Test Loss: 0.4051642
+Validation loss decreased (0.346097 --> 0.346092).  Saving model ...
+Updating learning rate to 2.44140625e-09
+Epoch: 16, Steps: 546 | Train Loss: 0.3464722 Vali Loss: 0.3461910 Test Loss: 0.4051617
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.220703125e-09
+Epoch: 17, Steps: 546 | Train Loss: 0.3464692 Vali Loss: 0.3460584 Test Loss: 0.4051611
+Validation loss decreased (0.346092 --> 0.346058).  Saving model ...
+Updating learning rate to 6.103515625e-10
+Epoch: 18, Steps: 546 | Train Loss: 0.3465008 Vali Loss: 0.3460681 Test Loss: 0.4051609
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 3.0517578125e-10
+Epoch: 19, Steps: 546 | Train Loss: 0.3465204 Vali Loss: 0.3460826 Test Loss: 0.4051609
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 1.52587890625e-10
+Epoch: 20, Steps: 546 | Train Loss: 0.3464494 Vali Loss: 0.3461611 Test Loss: 0.4051608
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_720_4e-5_Mamba2_RMS_custom_ftM_sl192_ll192_pl720_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_4e-05_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 4541
+mse:0.40507039427757263, mae:0.4639148414134979
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_96_1e-4', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=96, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_96_1e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18125
+val 2537
+test 5165
+Epoch: 1, Steps: 566 | Train Loss: 0.6314387 Vali Loss: 0.3840373 Test Loss: 0.4508607
+Validation loss decreased (inf --> 0.384037).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2, Steps: 566 | Train Loss: 0.3191423 Vali Loss: 0.2900759 Test Loss: 0.3554162
+Validation loss decreased (0.384037 --> 0.290076).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 3, Steps: 566 | Train Loss: 0.2524921 Vali Loss: 0.2707272 Test Loss: 0.3412319
+Validation loss decreased (0.290076 --> 0.270727).  Saving model ...
+Updating learning rate to 2.5e-05
+Epoch: 4, Steps: 566 | Train Loss: 0.2330897 Vali Loss: 0.2649420 Test Loss: 0.3380176
+Validation loss decreased (0.270727 --> 0.264942).  Saving model ...
+Updating learning rate to 1.25e-05
+Epoch: 5, Steps: 566 | Train Loss: 0.2253487 Vali Loss: 0.2628219 Test Loss: 0.3360561
+Validation loss decreased (0.264942 --> 0.262822).  Saving model ...
+Updating learning rate to 6.25e-06
+Epoch: 6, Steps: 566 | Train Loss: 0.2216707 Vali Loss: 0.2610096 Test Loss: 0.3349595
+Validation loss decreased (0.262822 --> 0.261010).  Saving model ...
+Updating learning rate to 3.125e-06
+Epoch: 7, Steps: 566 | Train Loss: 0.2198796 Vali Loss: 0.2606917 Test Loss: 0.3354252
+Validation loss decreased (0.261010 --> 0.260692).  Saving model ...
+Updating learning rate to 1.5625e-06
+Epoch: 8, Steps: 566 | Train Loss: 0.2188756 Vali Loss: 0.2602541 Test Loss: 0.3351119
+Validation loss decreased (0.260692 --> 0.260254).  Saving model ...
+Updating learning rate to 7.8125e-07
+Epoch: 9, Steps: 566 | Train Loss: 0.2183818 Vali Loss: 0.2600597 Test Loss: 0.3352194
+Validation loss decreased (0.260254 --> 0.260060).  Saving model ...
+Updating learning rate to 3.90625e-07
+Epoch: 10, Steps: 566 | Train Loss: 0.2181220 Vali Loss: 0.2600397 Test Loss: 0.3351558
+Validation loss decreased (0.260060 --> 0.260040).  Saving model ...
+Updating learning rate to 1.953125e-07
+Epoch: 11, Steps: 566 | Train Loss: 0.2179786 Vali Loss: 0.2598777 Test Loss: 0.3351655
+Validation loss decreased (0.260040 --> 0.259878).  Saving model ...
+Updating learning rate to 9.765625e-08
+Epoch: 12, Steps: 566 | Train Loss: 0.2179208 Vali Loss: 0.2598451 Test Loss: 0.3351168
+Validation loss decreased (0.259878 --> 0.259845).  Saving model ...
+Updating learning rate to 4.8828125e-08
+Epoch: 13, Steps: 566 | Train Loss: 0.2178934 Vali Loss: 0.2598480 Test Loss: 0.3350988
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 2.44140625e-08
+Epoch: 14, Steps: 566 | Train Loss: 0.2178947 Vali Loss: 0.2598244 Test Loss: 0.3350856
+Validation loss decreased (0.259845 --> 0.259824).  Saving model ...
+Updating learning rate to 1.220703125e-08
+Epoch: 15, Steps: 566 | Train Loss: 0.2178817 Vali Loss: 0.2597637 Test Loss: 0.3350892
+Validation loss decreased (0.259824 --> 0.259764).  Saving model ...
+Updating learning rate to 6.103515625e-09
+Epoch: 16, Steps: 566 | Train Loss: 0.2178340 Vali Loss: 0.2598780 Test Loss: 0.3350854
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 3.0517578125e-09
+Epoch: 17, Steps: 566 | Train Loss: 0.2178643 Vali Loss: 0.2598577 Test Loss: 0.3350841
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 1.52587890625e-09
+Epoch: 18, Steps: 566 | Train Loss: 0.2178913 Vali Loss: 0.2597953 Test Loss: 0.3350838
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_96_1e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5165
+mse:0.33476459980010986, mae:0.4147630035877228
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_192_1e-4', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=192, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_192_1e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl192_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18029
+val 2441
+test 5069
+Epoch: 1, Steps: 563 | Train Loss: 0.6301037 Vali Loss: 0.3828286 Test Loss: 0.4507487
+Validation loss decreased (inf --> 0.382829).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2, Steps: 563 | Train Loss: 0.3168213 Vali Loss: 0.2897576 Test Loss: 0.3581706
+Validation loss decreased (0.382829 --> 0.289758).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 3, Steps: 563 | Train Loss: 0.2505249 Vali Loss: 0.2727435 Test Loss: 0.3422002
+Validation loss decreased (0.289758 --> 0.272744).  Saving model ...
+Updating learning rate to 2.5e-05
+Epoch: 4, Steps: 563 | Train Loss: 0.2316994 Vali Loss: 0.2676222 Test Loss: 0.3363998
+Validation loss decreased (0.272744 --> 0.267622).  Saving model ...
+Updating learning rate to 1.25e-05
+Epoch: 5, Steps: 563 | Train Loss: 0.2241430 Vali Loss: 0.2663304 Test Loss: 0.3351668
+Validation loss decreased (0.267622 --> 0.266330).  Saving model ...
+Updating learning rate to 6.25e-06
+Epoch: 6, Steps: 563 | Train Loss: 0.2205190 Vali Loss: 0.2649915 Test Loss: 0.3337115
+Validation loss decreased (0.266330 --> 0.264992).  Saving model ...
+Updating learning rate to 3.125e-06
+Epoch: 7, Steps: 563 | Train Loss: 0.2186768 Vali Loss: 0.2646536 Test Loss: 0.3341581
+Validation loss decreased (0.264992 --> 0.264654).  Saving model ...
+Updating learning rate to 1.5625e-06
+Epoch: 8, Steps: 563 | Train Loss: 0.2177603 Vali Loss: 0.2642367 Test Loss: 0.3337002
+Validation loss decreased (0.264654 --> 0.264237).  Saving model ...
+Updating learning rate to 7.8125e-07
+Epoch: 9, Steps: 563 | Train Loss: 0.2171934 Vali Loss: 0.2640882 Test Loss: 0.3333202
+Validation loss decreased (0.264237 --> 0.264088).  Saving model ...
+Updating learning rate to 3.90625e-07
+Epoch: 10, Steps: 563 | Train Loss: 0.2169465 Vali Loss: 0.2642159 Test Loss: 0.3336164
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.953125e-07
+Epoch: 11, Steps: 563 | Train Loss: 0.2167976 Vali Loss: 0.2641400 Test Loss: 0.3333451
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 9.765625e-08
+Epoch: 12, Steps: 563 | Train Loss: 0.2167367 Vali Loss: 0.2640457 Test Loss: 0.3333805
+Validation loss decreased (0.264088 --> 0.264046).  Saving model ...
+Updating learning rate to 4.8828125e-08
+Epoch: 13, Steps: 563 | Train Loss: 0.2167059 Vali Loss: 0.2640613 Test Loss: 0.3333767
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 2.44140625e-08
+Epoch: 14, Steps: 563 | Train Loss: 0.2166918 Vali Loss: 0.2640975 Test Loss: 0.3333788
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 1.220703125e-08
+Epoch: 15, Steps: 563 | Train Loss: 0.2166688 Vali Loss: 0.2640366 Test Loss: 0.3333776
+Validation loss decreased (0.264046 --> 0.264037).  Saving model ...
+Updating learning rate to 6.103515625e-09
+Epoch: 16, Steps: 563 | Train Loss: 0.2166772 Vali Loss: 0.2641352 Test Loss: 0.3333780
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 3.0517578125e-09
+Epoch: 17, Steps: 563 | Train Loss: 0.2166905 Vali Loss: 0.2640594 Test Loss: 0.3333770
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 1.52587890625e-09
+Epoch: 18, Steps: 563 | Train Loss: 0.2166794 Vali Loss: 0.2640713 Test Loss: 0.3333772
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_192_1e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl192_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5069
+mse:0.3319694697856903, mae:0.4135749042034149
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_336_1e-4', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=336, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_336_1e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl336_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17885
+val 2297
+test 4925
+Epoch: 1, Steps: 558 | Train Loss: 0.6314952 Vali Loss: 0.3844592 Test Loss: 0.4482786
+Validation loss decreased (inf --> 0.384459).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2, Steps: 558 | Train Loss: 0.3196610 Vali Loss: 0.2920198 Test Loss: 0.3510247
+Validation loss decreased (0.384459 --> 0.292020).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 3, Steps: 558 | Train Loss: 0.2524733 Vali Loss: 0.2752029 Test Loss: 0.3321674
+Validation loss decreased (0.292020 --> 0.275203).  Saving model ...
+Updating learning rate to 2.5e-05
+Epoch: 4, Steps: 558 | Train Loss: 0.2331590 Vali Loss: 0.2700033 Test Loss: 0.3273819
+Validation loss decreased (0.275203 --> 0.270003).  Saving model ...
+Updating learning rate to 1.25e-05
+Epoch: 5, Steps: 558 | Train Loss: 0.2255380 Vali Loss: 0.2674274 Test Loss: 0.3242181
+Validation loss decreased (0.270003 --> 0.267427).  Saving model ...
+Updating learning rate to 6.25e-06
+Epoch: 6, Steps: 558 | Train Loss: 0.2218367 Vali Loss: 0.2661025 Test Loss: 0.3228823
+Validation loss decreased (0.267427 --> 0.266103).  Saving model ...
+Updating learning rate to 3.125e-06
+Epoch: 7, Steps: 558 | Train Loss: 0.2199757 Vali Loss: 0.2656361 Test Loss: 0.3222918
+Validation loss decreased (0.266103 --> 0.265636).  Saving model ...
+Updating learning rate to 1.5625e-06
+Epoch: 8, Steps: 558 | Train Loss: 0.2190437 Vali Loss: 0.2652760 Test Loss: 0.3217581
+Validation loss decreased (0.265636 --> 0.265276).  Saving model ...
+Updating learning rate to 7.8125e-07
+Epoch: 9, Steps: 558 | Train Loss: 0.2185195 Vali Loss: 0.2650368 Test Loss: 0.3214693
+Validation loss decreased (0.265276 --> 0.265037).  Saving model ...
+Updating learning rate to 3.90625e-07
+Epoch: 10, Steps: 558 | Train Loss: 0.2182404 Vali Loss: 0.2650445 Test Loss: 0.3214357
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.953125e-07
+Epoch: 11, Steps: 558 | Train Loss: 0.2180929 Vali Loss: 0.2648973 Test Loss: 0.3213876
+Validation loss decreased (0.265037 --> 0.264897).  Saving model ...
+Updating learning rate to 9.765625e-08
+Epoch: 12, Steps: 558 | Train Loss: 0.2180401 Vali Loss: 0.2649433 Test Loss: 0.3213879
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 4.8828125e-08
+Epoch: 13, Steps: 558 | Train Loss: 0.2180144 Vali Loss: 0.2649513 Test Loss: 0.3213894
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 2.44140625e-08
+Epoch: 14, Steps: 558 | Train Loss: 0.2180150 Vali Loss: 0.2649097 Test Loss: 0.3213569
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_336_1e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl336_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 4925
+mse:0.32125166058540344, mae:0.4031582772731781
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_720_1e-4', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=720, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_720_1e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl720_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17501
+val 1913
+test 4541
+Epoch: 1, Steps: 546 | Train Loss: 0.6340297 Vali Loss: 0.3889647 Test Loss: 0.4463328
+Validation loss decreased (inf --> 0.388965).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2, Steps: 546 | Train Loss: 0.3261654 Vali Loss: 0.3035651 Test Loss: 0.3511840
+Validation loss decreased (0.388965 --> 0.303565).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 3, Steps: 546 | Train Loss: 0.2587372 Vali Loss: 0.2841040 Test Loss: 0.3288365
+Validation loss decreased (0.303565 --> 0.284104).  Saving model ...
+Updating learning rate to 2.5e-05
+Epoch: 4, Steps: 546 | Train Loss: 0.2385487 Vali Loss: 0.2789325 Test Loss: 0.3223383
+Validation loss decreased (0.284104 --> 0.278932).  Saving model ...
+Updating learning rate to 1.25e-05
+Epoch: 5, Steps: 546 | Train Loss: 0.2303405 Vali Loss: 0.2760929 Test Loss: 0.3196912
+Validation loss decreased (0.278932 --> 0.276093).  Saving model ...
+Updating learning rate to 6.25e-06
+Epoch: 6, Steps: 546 | Train Loss: 0.2264264 Vali Loss: 0.2757802 Test Loss: 0.3178668
+Validation loss decreased (0.276093 --> 0.275780).  Saving model ...
+Updating learning rate to 3.125e-06
+Epoch: 7, Steps: 546 | Train Loss: 0.2244610 Vali Loss: 0.2752942 Test Loss: 0.3175214
+Validation loss decreased (0.275780 --> 0.275294).  Saving model ...
+Updating learning rate to 1.5625e-06
+Epoch: 8, Steps: 546 | Train Loss: 0.2234592 Vali Loss: 0.2743732 Test Loss: 0.3170542
+Validation loss decreased (0.275294 --> 0.274373).  Saving model ...
+Updating learning rate to 7.8125e-07
+Epoch: 9, Steps: 546 | Train Loss: 0.2228528 Vali Loss: 0.2742493 Test Loss: 0.3167739
+Validation loss decreased (0.274373 --> 0.274249).  Saving model ...
+Updating learning rate to 3.90625e-07
+Epoch: 10, Steps: 546 | Train Loss: 0.2225870 Vali Loss: 0.2743321 Test Loss: 0.3167468
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.953125e-07
+Epoch: 11, Steps: 546 | Train Loss: 0.2224621 Vali Loss: 0.2743190 Test Loss: 0.3167710
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 9.765625e-08
+Epoch: 12, Steps: 546 | Train Loss: 0.2223439 Vali Loss: 0.2742587 Test Loss: 0.3166926
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_720_1e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl720_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 4541
+mse:0.31669914722442627, mae:0.4013269543647766
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_96_4e-4', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=96, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_96_4e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18125
+val 2537
+test 5165
+Epoch: 1, Steps: 566 | Train Loss: 0.3716331 Vali Loss: 0.2520110 Test Loss: 0.3174077
+Validation loss decreased (inf --> 0.252011).  Saving model ...
+Updating learning rate to 0.0004
+Epoch: 2, Steps: 566 | Train Loss: 0.1900318 Vali Loss: 0.2258273 Test Loss: 0.3024029
+Validation loss decreased (0.252011 --> 0.225827).  Saving model ...
+Updating learning rate to 0.0002
+Epoch: 3, Steps: 566 | Train Loss: 0.1645368 Vali Loss: 0.2192183 Test Loss: 0.3021566
+Validation loss decreased (0.225827 --> 0.219218).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 4, Steps: 566 | Train Loss: 0.1560285 Vali Loss: 0.2172612 Test Loss: 0.3020719
+Validation loss decreased (0.219218 --> 0.217261).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 5, Steps: 566 | Train Loss: 0.1521201 Vali Loss: 0.2162519 Test Loss: 0.3017120
+Validation loss decreased (0.217261 --> 0.216252).  Saving model ...
+Updating learning rate to 2.5e-05
+Epoch: 6, Steps: 566 | Train Loss: 0.1500925 Vali Loss: 0.2154784 Test Loss: 0.3012287
+Validation loss decreased (0.216252 --> 0.215478).  Saving model ...
+Updating learning rate to 1.25e-05
+Epoch: 7, Steps: 566 | Train Loss: 0.1490625 Vali Loss: 0.2159599 Test Loss: 0.3019135
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 6.25e-06
+Epoch: 8, Steps: 566 | Train Loss: 0.1484669 Vali Loss: 0.2159302 Test Loss: 0.3020554
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 3.125e-06
+Epoch: 9, Steps: 566 | Train Loss: 0.1481645 Vali Loss: 0.2153946 Test Loss: 0.3017623
+Validation loss decreased (0.215478 --> 0.215395).  Saving model ...
+Updating learning rate to 1.5625e-06
+Epoch: 10, Steps: 566 | Train Loss: 0.1480000 Vali Loss: 0.2156865 Test Loss: 0.3019583
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 7.8125e-07
+Epoch: 11, Steps: 566 | Train Loss: 0.1479083 Vali Loss: 0.2154754 Test Loss: 0.3017894
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 3.90625e-07
+Epoch: 12, Steps: 566 | Train Loss: 0.1478620 Vali Loss: 0.2155524 Test Loss: 0.3019533
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_96_4e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5165
+mse:0.3013947904109955, mae:0.3818907141685486
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_192_4e-4', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=192, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_192_4e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl192_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18029
+val 2441
+test 5069
+Epoch: 1, Steps: 563 | Train Loss: 0.3684823 Vali Loss: 0.2563140 Test Loss: 0.3219630
+Validation loss decreased (inf --> 0.256314).  Saving model ...
+Updating learning rate to 0.0004
+Epoch: 2, Steps: 563 | Train Loss: 0.1892319 Vali Loss: 0.2322614 Test Loss: 0.3115923
+Validation loss decreased (0.256314 --> 0.232261).  Saving model ...
+Updating learning rate to 0.0002
+Epoch: 3, Steps: 563 | Train Loss: 0.1650228 Vali Loss: 0.2250036 Test Loss: 0.3128915
+Validation loss decreased (0.232261 --> 0.225004).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 4, Steps: 563 | Train Loss: 0.1567851 Vali Loss: 0.2214956 Test Loss: 0.3118683
+Validation loss decreased (0.225004 --> 0.221496).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 5, Steps: 563 | Train Loss: 0.1529477 Vali Loss: 0.2213157 Test Loss: 0.3124175
+Validation loss decreased (0.221496 --> 0.221316).  Saving model ...
+Updating learning rate to 2.5e-05
+Epoch: 6, Steps: 563 | Train Loss: 0.1509369 Vali Loss: 0.2202030 Test Loss: 0.3104261
+Validation loss decreased (0.221316 --> 0.220203).  Saving model ...
+Updating learning rate to 1.25e-05
+Epoch: 7, Steps: 563 | Train Loss: 0.1498801 Vali Loss: 0.2200358 Test Loss: 0.3109897
+Validation loss decreased (0.220203 --> 0.220036).  Saving model ...
+Updating learning rate to 6.25e-06
+Epoch: 8, Steps: 563 | Train Loss: 0.1492874 Vali Loss: 0.2195059 Test Loss: 0.3104209
+Validation loss decreased (0.220036 --> 0.219506).  Saving model ...
+Updating learning rate to 3.125e-06
+Epoch: 9, Steps: 563 | Train Loss: 0.1489722 Vali Loss: 0.2194812 Test Loss: 0.3102129
+Validation loss decreased (0.219506 --> 0.219481).  Saving model ...
+Updating learning rate to 1.5625e-06
+Epoch: 10, Steps: 563 | Train Loss: 0.1488006 Vali Loss: 0.2195285 Test Loss: 0.3101790
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 7.8125e-07
+Epoch: 11, Steps: 563 | Train Loss: 0.1487294 Vali Loss: 0.2195001 Test Loss: 0.3102080
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 3.90625e-07
+Epoch: 12, Steps: 563 | Train Loss: 0.1486631 Vali Loss: 0.2193321 Test Loss: 0.3102510
+Validation loss decreased (0.219481 --> 0.219332).  Saving model ...
+Updating learning rate to 1.953125e-07
+Epoch: 13, Steps: 563 | Train Loss: 0.1486623 Vali Loss: 0.2193220 Test Loss: 0.3102116
+Validation loss decreased (0.219332 --> 0.219322).  Saving model ...
+Updating learning rate to 9.765625e-08
+Epoch: 14, Steps: 563 | Train Loss: 0.1486498 Vali Loss: 0.2194304 Test Loss: 0.3101780
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 4.8828125e-08
+Epoch: 15, Steps: 563 | Train Loss: 0.1486424 Vali Loss: 0.2193110 Test Loss: 0.3101783
+Validation loss decreased (0.219322 --> 0.219311).  Saving model ...
+Updating learning rate to 2.44140625e-08
+Epoch: 16, Steps: 563 | Train Loss: 0.1486379 Vali Loss: 0.2194457 Test Loss: 0.3101931
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.220703125e-08
+Epoch: 17, Steps: 563 | Train Loss: 0.1486521 Vali Loss: 0.2193270 Test Loss: 0.3101985
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 6.103515625e-09
+Epoch: 18, Steps: 563 | Train Loss: 0.1486363 Vali Loss: 0.2193412 Test Loss: 0.3101961
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_192_4e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl192_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5069
+mse:0.30875900387763977, mae:0.3886909484863281
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_336_4e-4', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=336, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_336_4e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl336_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17885
+val 2297
+test 4925
+Epoch: 1, Steps: 558 | Train Loss: 0.3705846 Vali Loss: 0.2627065 Test Loss: 0.3192165
+Validation loss decreased (inf --> 0.262706).  Saving model ...
+Updating learning rate to 0.0004
+Epoch: 2, Steps: 558 | Train Loss: 0.1904940 Vali Loss: 0.2370714 Test Loss: 0.3073001
+Validation loss decreased (0.262706 --> 0.237071).  Saving model ...
+Updating learning rate to 0.0002
+Epoch: 3, Steps: 558 | Train Loss: 0.1661985 Vali Loss: 0.2329101 Test Loss: 0.3074404
+Validation loss decreased (0.237071 --> 0.232910).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 4, Steps: 558 | Train Loss: 0.1579291 Vali Loss: 0.2306418 Test Loss: 0.3016641
+Validation loss decreased (0.232910 --> 0.230642).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 5, Steps: 558 | Train Loss: 0.1540743 Vali Loss: 0.2309617 Test Loss: 0.3016794
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 2.5e-05
+Epoch: 6, Steps: 558 | Train Loss: 0.1520029 Vali Loss: 0.2294491 Test Loss: 0.2989233
+Validation loss decreased (0.230642 --> 0.229449).  Saving model ...
+Updating learning rate to 1.25e-05
+Epoch: 7, Steps: 558 | Train Loss: 0.1508827 Vali Loss: 0.2289660 Test Loss: 0.3004506
+Validation loss decreased (0.229449 --> 0.228966).  Saving model ...
+Updating learning rate to 6.25e-06
+Epoch: 8, Steps: 558 | Train Loss: 0.1503170 Vali Loss: 0.2290300 Test Loss: 0.3000663
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 3.125e-06
+Epoch: 9, Steps: 558 | Train Loss: 0.1499663 Vali Loss: 0.2289273 Test Loss: 0.3000208
+Validation loss decreased (0.228966 --> 0.228927).  Saving model ...
+Updating learning rate to 1.5625e-06
+Epoch: 10, Steps: 558 | Train Loss: 0.1497947 Vali Loss: 0.2289583 Test Loss: 0.2997751
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 7.8125e-07
+Epoch: 11, Steps: 558 | Train Loss: 0.1497109 Vali Loss: 0.2289644 Test Loss: 0.2998205
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 3.90625e-07
+Epoch: 12, Steps: 558 | Train Loss: 0.1496605 Vali Loss: 0.2289345 Test Loss: 0.2999422
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_336_4e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl336_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 4925
+mse:0.2998715341091156, mae:0.38539159297943115
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_720_4e-4', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=720, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_720_4e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl720_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17501
+val 1913
+test 4541
+Epoch: 1, Steps: 546 | Train Loss: 0.3761716 Vali Loss: 0.2646810 Test Loss: 0.3115938
+Validation loss decreased (inf --> 0.264681).  Saving model ...
+Updating learning rate to 0.0004
+Epoch: 2, Steps: 546 | Train Loss: 0.1936110 Vali Loss: 0.2439913 Test Loss: 0.3024937
+Validation loss decreased (0.264681 --> 0.243991).  Saving model ...
+Updating learning rate to 0.0002
+Epoch: 3, Steps: 546 | Train Loss: 0.1685334 Vali Loss: 0.2341939 Test Loss: 0.3033698
+Validation loss decreased (0.243991 --> 0.234194).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 4, Steps: 546 | Train Loss: 0.1597757 Vali Loss: 0.2328613 Test Loss: 0.3044782
+Validation loss decreased (0.234194 --> 0.232861).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 5, Steps: 546 | Train Loss: 0.1556647 Vali Loss: 0.2296930 Test Loss: 0.3031801
+Validation loss decreased (0.232861 --> 0.229693).  Saving model ...
+Updating learning rate to 2.5e-05
+Epoch: 6, Steps: 546 | Train Loss: 0.1535148 Vali Loss: 0.2295512 Test Loss: 0.3042163
+Validation loss decreased (0.229693 --> 0.229551).  Saving model ...
+Updating learning rate to 1.25e-05
+Epoch: 7, Steps: 546 | Train Loss: 0.1523614 Vali Loss: 0.2299351 Test Loss: 0.3050542
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 6.25e-06
+Epoch: 8, Steps: 546 | Train Loss: 0.1517421 Vali Loss: 0.2296733 Test Loss: 0.3049291
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 3.125e-06
+Epoch: 9, Steps: 546 | Train Loss: 0.1513610 Vali Loss: 0.2296090 Test Loss: 0.3049780
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_720_4e-4_Mamba2_RMS_custom_ftM_sl192_ll192_pl720_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.0004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 4541
+mse:0.3041473925113678, mae:0.3877057433128357
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_96_1e-3', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=96, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_96_1e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18125
+val 2537
+test 5165
+Epoch: 1, Steps: 566 | Train Loss: 0.2768484 Vali Loss: 0.2289903 Test Loss: 0.2973010
+Validation loss decreased (inf --> 0.228990).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2, Steps: 566 | Train Loss: 0.1528388 Vali Loss: 0.2078912 Test Loss: 0.2868236
+Validation loss decreased (0.228990 --> 0.207891).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 3, Steps: 566 | Train Loss: 0.1343044 Vali Loss: 0.2068317 Test Loss: 0.2865720
+Validation loss decreased (0.207891 --> 0.206832).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 4, Steps: 566 | Train Loss: 0.1277999 Vali Loss: 0.2075052 Test Loss: 0.2870745
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.000125
+Epoch: 5, Steps: 566 | Train Loss: 0.1248534 Vali Loss: 0.2090940 Test Loss: 0.2878712
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 6.25e-05
+Epoch: 6, Steps: 566 | Train Loss: 0.1233463 Vali Loss: 0.2099765 Test Loss: 0.2894237
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_96_1e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5165
+mse:0.28618013858795166, mae:0.37250855565071106
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_192_1e-3', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=192, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_192_1e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl192_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18029
+val 2441
+test 5069
+Epoch: 1, Steps: 563 | Train Loss: 0.2741440 Vali Loss: 0.2279361 Test Loss: 0.3030797
+Validation loss decreased (inf --> 0.227936).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2, Steps: 563 | Train Loss: 0.1533323 Vali Loss: 0.2118523 Test Loss: 0.2971388
+Validation loss decreased (0.227936 --> 0.211852).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 3, Steps: 563 | Train Loss: 0.1347149 Vali Loss: 0.2085505 Test Loss: 0.2919821
+Validation loss decreased (0.211852 --> 0.208550).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 4, Steps: 563 | Train Loss: 0.1282383 Vali Loss: 0.2084708 Test Loss: 0.2943026
+Validation loss decreased (0.208550 --> 0.208471).  Saving model ...
+Updating learning rate to 0.000125
+Epoch: 5, Steps: 563 | Train Loss: 0.1253115 Vali Loss: 0.2079443 Test Loss: 0.2947668
+Validation loss decreased (0.208471 --> 0.207944).  Saving model ...
+Updating learning rate to 6.25e-05
+Epoch: 6, Steps: 563 | Train Loss: 0.1238623 Vali Loss: 0.2079300 Test Loss: 0.2928187
+Validation loss decreased (0.207944 --> 0.207930).  Saving model ...
+Updating learning rate to 3.125e-05
+Epoch: 7, Steps: 563 | Train Loss: 0.1231067 Vali Loss: 0.2085260 Test Loss: 0.2949685
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.5625e-05
+Epoch: 8, Steps: 563 | Train Loss: 0.1227012 Vali Loss: 0.2082974 Test Loss: 0.2951995
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 7.8125e-06
+Epoch: 9, Steps: 563 | Train Loss: 0.1224608 Vali Loss: 0.2083363 Test Loss: 0.2951341
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_192_1e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl192_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5069
+mse:0.2912745475769043, mae:0.3758094906806946
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_336_1e-3', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=336, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_336_1e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl336_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17885
+val 2297
+test 4925
+Epoch: 1, Steps: 558 | Train Loss: 0.2761034 Vali Loss: 0.2405685 Test Loss: 0.3118502
+Validation loss decreased (inf --> 0.240568).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2, Steps: 558 | Train Loss: 0.1552405 Vali Loss: 0.2211183 Test Loss: 0.3006492
+Validation loss decreased (0.240568 --> 0.221118).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 3, Steps: 558 | Train Loss: 0.1359115 Vali Loss: 0.2190441 Test Loss: 0.2984601
+Validation loss decreased (0.221118 --> 0.219044).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 4, Steps: 558 | Train Loss: 0.1291481 Vali Loss: 0.2184791 Test Loss: 0.2881717
+Validation loss decreased (0.219044 --> 0.218479).  Saving model ...
+Updating learning rate to 0.000125
+Epoch: 5, Steps: 558 | Train Loss: 0.1261247 Vali Loss: 0.2201561 Test Loss: 0.2866157
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 6.25e-05
+Epoch: 6, Steps: 558 | Train Loss: 0.1245573 Vali Loss: 0.2193324 Test Loss: 0.2847944
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 3.125e-05
+Epoch: 7, Steps: 558 | Train Loss: 0.1237292 Vali Loss: 0.2200245 Test Loss: 0.2855262
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_336_1e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl336_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 4925
+mse:0.2880018353462219, mae:0.3726061284542084
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_720_1e-3', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=720, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_720_1e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl720_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17501
+val 1913
+test 4541
+Epoch: 1, Steps: 546 | Train Loss: 0.2785422 Vali Loss: 0.2440567 Test Loss: 0.3091200
+Validation loss decreased (inf --> 0.244057).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2, Steps: 546 | Train Loss: 0.1549027 Vali Loss: 0.2301529 Test Loss: 0.3096296
+Validation loss decreased (0.244057 --> 0.230153).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 3, Steps: 546 | Train Loss: 0.1354358 Vali Loss: 0.2265804 Test Loss: 0.3157269
+Validation loss decreased (0.230153 --> 0.226580).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 4, Steps: 546 | Train Loss: 0.1286006 Vali Loss: 0.2256398 Test Loss: 0.3078587
+Validation loss decreased (0.226580 --> 0.225640).  Saving model ...
+Updating learning rate to 0.000125
+Epoch: 5, Steps: 546 | Train Loss: 0.1256026 Vali Loss: 0.2249182 Test Loss: 0.3107672
+Validation loss decreased (0.225640 --> 0.224918).  Saving model ...
+Updating learning rate to 6.25e-05
+Epoch: 6, Steps: 546 | Train Loss: 0.1240955 Vali Loss: 0.2246572 Test Loss: 0.3109126
+Validation loss decreased (0.224918 --> 0.224657).  Saving model ...
+Updating learning rate to 3.125e-05
+Epoch: 7, Steps: 546 | Train Loss: 0.1233018 Vali Loss: 0.2247588 Test Loss: 0.3091951
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.5625e-05
+Epoch: 8, Steps: 546 | Train Loss: 0.1228762 Vali Loss: 0.2246978 Test Loss: 0.3098983
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 7.8125e-06
+Epoch: 9, Steps: 546 | Train Loss: 0.1226145 Vali Loss: 0.2248971 Test Loss: 0.3103300
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_720_1e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl720_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 4541
+mse:0.3108462393283844, mae:0.38782256841659546
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_96_4e-3', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=96, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_96_4e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18125
+val 2537
+test 5165
+Epoch: 1, Steps: 566 | Train Loss: 0.2089828 Vali Loss: 0.2108381 Test Loss: 0.2855493
+Validation loss decreased (inf --> 0.210838).  Saving model ...
+Updating learning rate to 0.004
+Epoch: 2, Steps: 566 | Train Loss: 0.1267598 Vali Loss: 0.2157616 Test Loss: 0.2824223
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.002
+Epoch: 3, Steps: 566 | Train Loss: 0.1160857 Vali Loss: 0.2071445 Test Loss: 0.2812571
+Validation loss decreased (0.210838 --> 0.207144).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 4, Steps: 566 | Train Loss: 0.1125440 Vali Loss: 0.2087136 Test Loss: 0.2778516
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0005
+Epoch: 5, Steps: 566 | Train Loss: 0.1110433 Vali Loss: 0.2116053 Test Loss: 0.2769080
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.00025
+Epoch: 6, Steps: 566 | Train Loss: 0.1102739 Vali Loss: 0.2124102 Test Loss: 0.2774237
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_96_4e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5165
+mse:0.2807658910751343, mae:0.373889684677124
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_192_4e-3', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=192, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_192_4e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl192_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18029
+val 2441
+test 5069
+Epoch: 1, Steps: 563 | Train Loss: 0.2110899 Vali Loss: 0.2133570 Test Loss: 0.2883627
+Validation loss decreased (inf --> 0.213357).  Saving model ...
+Updating learning rate to 0.004
+Epoch: 2, Steps: 563 | Train Loss: 0.1291130 Vali Loss: 0.2082977 Test Loss: 0.2886842
+Validation loss decreased (0.213357 --> 0.208298).  Saving model ...
+Updating learning rate to 0.002
+Epoch: 3, Steps: 563 | Train Loss: 0.1168322 Vali Loss: 0.2064374 Test Loss: 0.2790467
+Validation loss decreased (0.208298 --> 0.206437).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 4, Steps: 563 | Train Loss: 0.1131733 Vali Loss: 0.2096495 Test Loss: 0.2805391
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0005
+Epoch: 5, Steps: 563 | Train Loss: 0.1114339 Vali Loss: 0.2080783 Test Loss: 0.2786415
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.00025
+Epoch: 6, Steps: 563 | Train Loss: 0.1105043 Vali Loss: 0.2091551 Test Loss: 0.2792047
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_192_4e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl192_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5069
+mse:0.2775491774082184, mae:0.3679822087287903
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_336_4e-3', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=336, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_336_4e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl336_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17885
+val 2297
+test 4925
+Epoch: 1, Steps: 558 | Train Loss: 0.2083391 Vali Loss: 0.2203181 Test Loss: 0.2902794
+Validation loss decreased (inf --> 0.220318).  Saving model ...
+Updating learning rate to 0.004
+Epoch: 2, Steps: 558 | Train Loss: 0.1237408 Vali Loss: 0.2128529 Test Loss: 0.2886354
+Validation loss decreased (0.220318 --> 0.212853).  Saving model ...
+Updating learning rate to 0.002
+Epoch: 3, Steps: 558 | Train Loss: 0.1127581 Vali Loss: 0.2158643 Test Loss: 0.2965968
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.001
+Epoch: 4, Steps: 558 | Train Loss: 0.1099257 Vali Loss: 0.2157792 Test Loss: 0.2975593
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.0005
+Epoch: 5, Steps: 558 | Train Loss: 0.1087240 Vali Loss: 0.2164987 Test Loss: 0.2978666
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_336_4e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl336_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 4925
+mse:0.28845643997192383, mae:0.37468719482421875
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_720_4e-3', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=720, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_720_4e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl720_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17501
+val 1913
+test 4541
+Epoch: 1, Steps: 546 | Train Loss: 0.2127694 Vali Loss: 0.2252815 Test Loss: 0.3152902
+Validation loss decreased (inf --> 0.225282).  Saving model ...
+Updating learning rate to 0.004
+Epoch: 2, Steps: 546 | Train Loss: 0.1238416 Vali Loss: 0.2256085 Test Loss: 0.3238506
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.002
+Epoch: 3, Steps: 546 | Train Loss: 0.1130819 Vali Loss: 0.2269797 Test Loss: 0.3287601
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.001
+Epoch: 4, Steps: 546 | Train Loss: 0.1100756 Vali Loss: 0.2276167 Test Loss: 0.3287793
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_720_4e-3_Mamba2_RMS_custom_ftM_sl192_ll192_pl720_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 4541
+mse:0.3152095079421997, mae:0.38903090357780457
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_96_1e-2', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=96, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.01, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_96_1e-2_Mamba2_RMS_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.01_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18125
+val 2537
+test 5165
+Epoch: 1, Steps: 566 | Train Loss: 0.2172578 Vali Loss: 0.2099006 Test Loss: 0.2778440
+Validation loss decreased (inf --> 0.209901).  Saving model ...
+Updating learning rate to 0.01
+Epoch: 2, Steps: 566 | Train Loss: 0.1373913 Vali Loss: 0.2276207 Test Loss: 0.2955737
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.005
+Epoch: 3, Steps: 566 | Train Loss: 0.1364919 Vali Loss: 0.2006204 Test Loss: 0.2781940
+Validation loss decreased (0.209901 --> 0.200620).  Saving model ...
+Updating learning rate to 0.0025
+Epoch: 4, Steps: 566 | Train Loss: 0.1222972 Vali Loss: 0.2030295 Test Loss: 0.2853840
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.00125
+Epoch: 5, Steps: 566 | Train Loss: 0.1194704 Vali Loss: 0.2092116 Test Loss: 0.2883031
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.000625
+Epoch: 6, Steps: 566 | Train Loss: 0.1180340 Vali Loss: 0.2132273 Test Loss: 0.2884226
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_96_1e-2_Mamba2_RMS_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.01_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5165
+mse:0.277829647064209, mae:0.3696320354938507
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_192_1e-2', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=192, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.01, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_192_1e-2_Mamba2_RMS_custom_ftM_sl192_ll192_pl192_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.01_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18029
+val 2441
+test 5069
+Epoch: 1, Steps: 563 | Train Loss: 0.2152897 Vali Loss: 0.2224779 Test Loss: 0.2846905
+Validation loss decreased (inf --> 0.222478).  Saving model ...
+Updating learning rate to 0.01
+Epoch: 2, Steps: 563 | Train Loss: 0.1388177 Vali Loss: 0.2077861 Test Loss: 0.2948626
+Validation loss decreased (0.222478 --> 0.207786).  Saving model ...
+Updating learning rate to 0.005
+Epoch: 3, Steps: 563 | Train Loss: 0.1237725 Vali Loss: 0.2078983 Test Loss: 0.2895299
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0025
+Epoch: 4, Steps: 563 | Train Loss: 0.1185930 Vali Loss: 0.2086925 Test Loss: 0.2882957
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.00125
+Epoch: 5, Steps: 563 | Train Loss: 0.1159608 Vali Loss: 0.2096582 Test Loss: 0.2875969
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_192_1e-2_Mamba2_RMS_custom_ftM_sl192_ll192_pl192_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.01_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 5069
+mse:0.29269924759864807, mae:0.3744214177131653
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_336_1e-2', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=336, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.01, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_336_1e-2_Mamba2_RMS_custom_ftM_sl192_ll192_pl336_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.01_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17885
+val 2297
+test 4925
+Epoch: 1, Steps: 558 | Train Loss: 0.2029428 Vali Loss: 0.2123025 Test Loss: 0.3014215
+Validation loss decreased (inf --> 0.212303).  Saving model ...
+Updating learning rate to 0.01
+Epoch: 2, Steps: 558 | Train Loss: 0.1294111 Vali Loss: 0.2107330 Test Loss: 0.2972848
+Validation loss decreased (0.212303 --> 0.210733).  Saving model ...
+Updating learning rate to 0.005
+Epoch: 3, Steps: 558 | Train Loss: 0.1158777 Vali Loss: 0.2108287 Test Loss: 0.2924280
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0025
+Epoch: 4, Steps: 558 | Train Loss: 0.1119779 Vali Loss: 0.2158877 Test Loss: 0.2945108
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.00125
+Epoch: 5, Steps: 558 | Train Loss: 0.1102268 Vali Loss: 0.2175727 Test Loss: 0.2913309
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_336_1e-2_Mamba2_RMS_custom_ftM_sl192_ll192_pl336_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.01_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 4925
+mse:0.29712656140327454, mae:0.38059404492378235
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='electricity_Mamba2_RMS_192_720_1e-2', model='Mamba2_RMS', data='custom', root_path='./dataset/electricity', data_path='electricity.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=720, d_state=32, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=321, c_out=321, d_model=32, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.01, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : electricity_Mamba2_RMS_192_720_1e-2_Mamba2_RMS_custom_ftM_sl192_ll192_pl720_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.01_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 17501
+val 1913
+test 4541
+Epoch: 1, Steps: 546 | Train Loss: 0.1973602 Vali Loss: 0.2116126 Test Loss: 0.3133222
+Validation loss decreased (inf --> 0.211613).  Saving model ...
+Updating learning rate to 0.01
+Epoch: 2, Steps: 546 | Train Loss: 0.1300512 Vali Loss: 0.2160504 Test Loss: 0.3209665
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.005
+Epoch: 3, Steps: 546 | Train Loss: 0.1168443 Vali Loss: 0.2230516 Test Loss: 0.3167777
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.0025
+Epoch: 4, Steps: 546 | Train Loss: 0.1129375 Vali Loss: 0.2279783 Test Loss: 0.3308111
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : electricity_Mamba2_RMS_192_720_1e-2_Mamba2_RMS_custom_ftM_sl192_ll192_pl720_dm32_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.01_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 4541
+mse:0.3132103979587555, mae:0.3877793550491333

@@ -1,0 +1,687 @@
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_96', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=96, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=4e-05, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_96_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl96_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_4e-05_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8353
+val 2785
+test 2785
+Epoch: 1, Steps: 261 | Train Loss: 0.3684718 Vali Loss: 1.3382444 Test Loss: 1.1882256
+Validation loss decreased (inf --> 1.338244).  Saving model ...
+Updating learning rate to 4e-05
+Epoch: 2, Steps: 261 | Train Loss: 0.1749501 Vali Loss: 1.3955537 Test Loss: 1.3063083
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 2e-05
+Epoch: 3, Steps: 261 | Train Loss: 0.1227759 Vali Loss: 1.4297154 Test Loss: 1.3316182
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 1e-05
+Epoch: 4, Steps: 261 | Train Loss: 0.1013050 Vali Loss: 1.4483004 Test Loss: 1.3462812
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_96_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl96_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_4e-05_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2785
+mse:1.1883190870285034, mae:0.8280830383300781
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_192', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=192, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=4e-05, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_192_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl192_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_4e-05_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8257
+val 2689
+test 2689
+Epoch: 1, Steps: 258 | Train Loss: 0.3667554 Vali Loss: 1.7194741 Test Loss: 1.2596318
+Validation loss decreased (inf --> 1.719474).  Saving model ...
+Updating learning rate to 4e-05
+Epoch: 2, Steps: 258 | Train Loss: 0.1745373 Vali Loss: 1.7253195 Test Loss: 1.3107327
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 2e-05
+Epoch: 3, Steps: 258 | Train Loss: 0.1251854 Vali Loss: 1.7431883 Test Loss: 1.3005104
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 1e-05
+Epoch: 4, Steps: 258 | Train Loss: 0.1006830 Vali Loss: 1.7670975 Test Loss: 1.3119943
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_192_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl192_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_4e-05_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+mse:1.2614054679870605, mae:0.8548074960708618
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_336', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=336, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=4e-05, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_336_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl336_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_4e-05_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8113
+val 2545
+test 2545
+Epoch: 1, Steps: 253 | Train Loss: 0.3820342 Vali Loss: 1.9616152 Test Loss: 1.2582052
+Validation loss decreased (inf --> 1.961615).  Saving model ...
+Updating learning rate to 4e-05
+Epoch: 2, Steps: 253 | Train Loss: 0.1751661 Vali Loss: 2.0813859 Test Loss: 1.3593206
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 2e-05
+Epoch: 3, Steps: 253 | Train Loss: 0.1194066 Vali Loss: 2.1769817 Test Loss: 1.3740431
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 1e-05
+Epoch: 4, Steps: 253 | Train Loss: 0.0926550 Vali Loss: 2.2093751 Test Loss: 1.3864963
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_336_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl336_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_4e-05_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2545
+mse:1.2597575187683105, mae:0.8534248471260071
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_720', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=720, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=4e-05, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_720_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl720_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_4e-05_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 7729
+val 2161
+test 2161
+Epoch: 1, Steps: 241 | Train Loss: 0.4013165 Vali Loss: 2.2929611 Test Loss: 1.3497381
+Validation loss decreased (inf --> 2.292961).  Saving model ...
+Updating learning rate to 4e-05
+Epoch: 2, Steps: 241 | Train Loss: 0.1747431 Vali Loss: 2.1468601 Test Loss: 1.4051880
+Validation loss decreased (2.292961 --> 2.146860).  Saving model ...
+Updating learning rate to 2e-05
+Epoch: 3, Steps: 241 | Train Loss: 0.1130342 Vali Loss: 2.1731894 Test Loss: 1.4035394
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1e-05
+Epoch: 4, Steps: 241 | Train Loss: 0.0888109 Vali Loss: 2.1839790 Test Loss: 1.4013746
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 5e-06
+Epoch: 5, Steps: 241 | Train Loss: 0.0792992 Vali Loss: 2.1793308 Test Loss: 1.4009302
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_720_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl720_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_4e-05_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2161
+mse:1.4041615724563599, mae:0.886383056640625
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_96', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=96, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_96_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl96_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8353
+val 2785
+test 2785
+Epoch: 1, Steps: 261 | Train Loss: 0.3470471 Vali Loss: 1.4102651 Test Loss: 1.2462471
+Validation loss decreased (inf --> 1.410265).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2, Steps: 261 | Train Loss: 0.1217796 Vali Loss: 1.4515622 Test Loss: 1.2684206
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 5e-05
+Epoch: 3, Steps: 261 | Train Loss: 0.0700091 Vali Loss: 1.4547573 Test Loss: 1.2526172
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 2.5e-05
+Epoch: 4, Steps: 261 | Train Loss: 0.0552705 Vali Loss: 1.4847393 Test Loss: 1.2475095
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_96_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl96_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2785
+mse:1.2460428476333618, mae:0.8606945872306824
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_192', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=192, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_192_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl192_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8257
+val 2689
+test 2689
+Epoch: 1, Steps: 258 | Train Loss: 0.3511620 Vali Loss: 1.7167127 Test Loss: 1.2585115
+Validation loss decreased (inf --> 1.716713).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2, Steps: 258 | Train Loss: 0.1135430 Vali Loss: 1.8296398 Test Loss: 1.2835364
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 5e-05
+Epoch: 3, Steps: 258 | Train Loss: 0.0635908 Vali Loss: 1.8191684 Test Loss: 1.2625128
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 2.5e-05
+Epoch: 4, Steps: 258 | Train Loss: 0.0510594 Vali Loss: 1.8105912 Test Loss: 1.2699748
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_192_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl192_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+mse:1.260948657989502, mae:0.8619040846824646
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_336', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=336, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_336_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl336_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8113
+val 2545
+test 2545
+Epoch: 1, Steps: 253 | Train Loss: 0.3580238 Vali Loss: 2.0588548 Test Loss: 1.2784705
+Validation loss decreased (inf --> 2.058855).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2, Steps: 253 | Train Loss: 0.1044002 Vali Loss: 2.0978053 Test Loss: 1.3124110
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 5e-05
+Epoch: 3, Steps: 253 | Train Loss: 0.0570172 Vali Loss: 2.0643692 Test Loss: 1.3569407
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 2.5e-05
+Epoch: 4, Steps: 253 | Train Loss: 0.0459510 Vali Loss: 2.0588732 Test Loss: 1.3357210
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_336_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl336_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2545
+mse:1.279309630393982, mae:0.8552361726760864
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_720', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=720, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_720_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl720_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 7729
+val 2161
+test 2161
+Epoch: 1, Steps: 241 | Train Loss: 0.3582648 Vali Loss: 2.1057689 Test Loss: 1.3225092
+Validation loss decreased (inf --> 2.105769).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2, Steps: 241 | Train Loss: 0.0892085 Vali Loss: 2.1654150 Test Loss: 1.3933609
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 5e-05
+Epoch: 3, Steps: 241 | Train Loss: 0.0518518 Vali Loss: 2.1533928 Test Loss: 1.3847917
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 2.5e-05
+Epoch: 4, Steps: 241 | Train Loss: 0.0429502 Vali Loss: 2.1607869 Test Loss: 1.3771926
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_720_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl720_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2161
+mse:1.3205991983413696, mae:0.8540489673614502
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_96', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=96, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_96_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl96_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8353
+val 2785
+test 2785
+Epoch: 1, Steps: 261 | Train Loss: 0.3318371 Vali Loss: 2.0006118 Test Loss: 1.4157242
+Validation loss decreased (inf --> 2.000612).  Saving model ...
+Updating learning rate to 0.0004
+Epoch: 2, Steps: 261 | Train Loss: 0.1047470 Vali Loss: 1.8982313 Test Loss: 1.2886554
+Validation loss decreased (2.000612 --> 1.898231).  Saving model ...
+Updating learning rate to 0.0002
+Epoch: 3, Steps: 261 | Train Loss: 0.0485090 Vali Loss: 1.8958901 Test Loss: 1.3359349
+Validation loss decreased (1.898231 --> 1.895890).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 4, Steps: 261 | Train Loss: 0.0331362 Vali Loss: 1.8731538 Test Loss: 1.3122674
+Validation loss decreased (1.895890 --> 1.873154).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 5, Steps: 261 | Train Loss: 0.0271189 Vali Loss: 1.8769066 Test Loss: 1.3151587
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 2.5e-05
+Epoch: 6, Steps: 261 | Train Loss: 0.0243182 Vali Loss: 1.8648102 Test Loss: 1.3152194
+Validation loss decreased (1.873154 --> 1.864810).  Saving model ...
+Updating learning rate to 1.25e-05
+Epoch: 7, Steps: 261 | Train Loss: 0.0229199 Vali Loss: 1.8653791 Test Loss: 1.3140399
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 6.25e-06
+Epoch: 8, Steps: 261 | Train Loss: 0.0221628 Vali Loss: 1.8619560 Test Loss: 1.3165402
+Validation loss decreased (1.864810 --> 1.861956).  Saving model ...
+Updating learning rate to 3.125e-06
+Epoch: 9, Steps: 261 | Train Loss: 0.0217792 Vali Loss: 1.8632754 Test Loss: 1.3118520
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.5625e-06
+Epoch: 10, Steps: 261 | Train Loss: 0.0215330 Vali Loss: 1.8622905 Test Loss: 1.3138537
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 7.8125e-07
+Epoch: 11, Steps: 261 | Train Loss: 0.0214350 Vali Loss: 1.8622876 Test Loss: 1.3126878
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_96_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl96_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2785
+mse:1.3185055255889893, mae:0.8884262442588806
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_192', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=192, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_192_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl192_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8257
+val 2689
+test 2689
+Epoch: 1, Steps: 258 | Train Loss: 0.3011539 Vali Loss: 1.7933482 Test Loss: 1.3059505
+Validation loss decreased (inf --> 1.793348).  Saving model ...
+Updating learning rate to 0.0004
+Epoch: 2, Steps: 258 | Train Loss: 0.0639725 Vali Loss: 1.8497332 Test Loss: 1.3207132
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0002
+Epoch: 3, Steps: 258 | Train Loss: 0.0309275 Vali Loss: 1.8941022 Test Loss: 1.3067876
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.0001
+Epoch: 4, Steps: 258 | Train Loss: 0.0223821 Vali Loss: 1.9084154 Test Loss: 1.3023789
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_192_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl192_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+mse:1.3089438676834106, mae:0.8819154500961304
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_336', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=336, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_336_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl336_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8113
+val 2545
+test 2545
+Epoch: 1, Steps: 253 | Train Loss: 0.2920996 Vali Loss: 2.0679915 Test Loss: 1.3603319
+Validation loss decreased (inf --> 2.067991).  Saving model ...
+Updating learning rate to 0.0004
+Epoch: 2, Steps: 253 | Train Loss: 0.0589348 Vali Loss: 2.0629764 Test Loss: 1.3685986
+Validation loss decreased (2.067991 --> 2.062976).  Saving model ...
+Updating learning rate to 0.0002
+Epoch: 3, Steps: 253 | Train Loss: 0.0296309 Vali Loss: 2.0547080 Test Loss: 1.3248206
+Validation loss decreased (2.062976 --> 2.054708).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 4, Steps: 253 | Train Loss: 0.0216617 Vali Loss: 2.0512884 Test Loss: 1.3304965
+Validation loss decreased (2.054708 --> 2.051288).  Saving model ...
+Updating learning rate to 5e-05
+Epoch: 5, Steps: 253 | Train Loss: 0.0185488 Vali Loss: 2.0578005 Test Loss: 1.3262750
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 2.5e-05
+Epoch: 6, Steps: 253 | Train Loss: 0.0170174 Vali Loss: 2.0550668 Test Loss: 1.3248203
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 1.25e-05
+Epoch: 7, Steps: 253 | Train Loss: 0.0162060 Vali Loss: 2.0559933 Test Loss: 1.3235958
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_336_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl336_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2545
+mse:1.3326557874679565, mae:0.8799996376037598
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_720', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=720, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.0004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_720_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl720_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 7729
+val 2161
+test 2161
+Epoch: 1, Steps: 241 | Train Loss: 0.2626073 Vali Loss: 2.1559095 Test Loss: 1.3972386
+Validation loss decreased (inf --> 2.155910).  Saving model ...
+Updating learning rate to 0.0004
+Epoch: 2, Steps: 241 | Train Loss: 0.0470072 Vali Loss: 2.1771359 Test Loss: 1.4043677
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0002
+Epoch: 3, Steps: 241 | Train Loss: 0.0242049 Vali Loss: 2.1712160 Test Loss: 1.4076477
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.0001
+Epoch: 4, Steps: 241 | Train Loss: 0.0178911 Vali Loss: 2.1880972 Test Loss: 1.3949275
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_720_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl720_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.0004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2161
+mse:1.396043062210083, mae:0.8873382210731506
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_96', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=96, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_96_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl96_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8353
+val 2785
+test 2785
+Epoch: 1, Steps: 261 | Train Loss: 0.3489614 Vali Loss: 1.8969861 Test Loss: 1.4501323
+Validation loss decreased (inf --> 1.896986).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2, Steps: 261 | Train Loss: 0.1611750 Vali Loss: 1.9084287 Test Loss: 1.4124583
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0005
+Epoch: 3, Steps: 261 | Train Loss: 0.0753086 Vali Loss: 1.8805400 Test Loss: 1.5516999
+Validation loss decreased (1.896986 --> 1.880540).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 4, Steps: 261 | Train Loss: 0.0432698 Vali Loss: 1.8252236 Test Loss: 1.5450875
+Validation loss decreased (1.880540 --> 1.825224).  Saving model ...
+Updating learning rate to 0.000125
+Epoch: 5, Steps: 261 | Train Loss: 0.0320534 Vali Loss: 1.7924131 Test Loss: 1.5185758
+Validation loss decreased (1.825224 --> 1.792413).  Saving model ...
+Updating learning rate to 6.25e-05
+Epoch: 6, Steps: 261 | Train Loss: 0.0274165 Vali Loss: 1.7914610 Test Loss: 1.5172782
+Validation loss decreased (1.792413 --> 1.791461).  Saving model ...
+Updating learning rate to 3.125e-05
+Epoch: 7, Steps: 261 | Train Loss: 0.0251364 Vali Loss: 1.7853910 Test Loss: 1.5115433
+Validation loss decreased (1.791461 --> 1.785391).  Saving model ...
+Updating learning rate to 1.5625e-05
+Epoch: 8, Steps: 261 | Train Loss: 0.0239941 Vali Loss: 1.7896800 Test Loss: 1.5155213
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 7.8125e-06
+Epoch: 9, Steps: 261 | Train Loss: 0.0234070 Vali Loss: 1.7904847 Test Loss: 1.5202880
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 3.90625e-06
+Epoch: 10, Steps: 261 | Train Loss: 0.0230662 Vali Loss: 1.7886878 Test Loss: 1.5187017
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_96_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl96_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2785
+mse:1.5125583410263062, mae:0.9306854009628296
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_192', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=192, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_192_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl192_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8257
+val 2689
+test 2689
+Epoch: 1, Steps: 258 | Train Loss: 0.3286375 Vali Loss: 2.0205185 Test Loss: 1.3272672
+Validation loss decreased (inf --> 2.020519).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2, Steps: 258 | Train Loss: 0.0932154 Vali Loss: 2.0781307 Test Loss: 1.3716666
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0005
+Epoch: 3, Steps: 258 | Train Loss: 0.0386334 Vali Loss: 2.1194458 Test Loss: 1.4212611
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.00025
+Epoch: 4, Steps: 258 | Train Loss: 0.0246095 Vali Loss: 2.1074393 Test Loss: 1.4567082
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_192_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl192_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+mse:1.329408049583435, mae:0.870581328868866
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_336', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=336, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_336_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl336_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8113
+val 2545
+test 2545
+Epoch: 1, Steps: 253 | Train Loss: 0.3043811 Vali Loss: 2.1896908 Test Loss: 1.3012536
+Validation loss decreased (inf --> 2.189691).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2, Steps: 253 | Train Loss: 0.0779874 Vali Loss: 2.1325629 Test Loss: 1.3434646
+Validation loss decreased (2.189691 --> 2.132563).  Saving model ...
+Updating learning rate to 0.0005
+Epoch: 3, Steps: 253 | Train Loss: 0.0348851 Vali Loss: 2.1169062 Test Loss: 1.3373258
+Validation loss decreased (2.132563 --> 2.116906).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 4, Steps: 253 | Train Loss: 0.0224957 Vali Loss: 2.1182301 Test Loss: 1.3260196
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.000125
+Epoch: 5, Steps: 253 | Train Loss: 0.0180601 Vali Loss: 2.1231208 Test Loss: 1.3159111
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 6.25e-05
+Epoch: 6, Steps: 253 | Train Loss: 0.0160269 Vali Loss: 2.1225722 Test Loss: 1.3185431
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_336_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl336_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2545
+mse:1.338495135307312, mae:0.8768885135650635
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_720', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=720, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.001, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_720_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl720_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.001_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 7729
+val 2161
+test 2161
+Epoch: 1, Steps: 241 | Train Loss: 0.2856423 Vali Loss: 2.1810501 Test Loss: 1.3413045
+Validation loss decreased (inf --> 2.181050).  Saving model ...
+Updating learning rate to 0.001
+Epoch: 2, Steps: 241 | Train Loss: 0.0596497 Vali Loss: 2.2222650 Test Loss: 1.3775142
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0005
+Epoch: 3, Steps: 241 | Train Loss: 0.0260722 Vali Loss: 2.2597682 Test Loss: 1.3783170
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.00025
+Epoch: 4, Steps: 241 | Train Loss: 0.0179390 Vali Loss: 2.2539868 Test Loss: 1.3770169
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_720_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl720_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.001_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2161
+mse:1.3395344018936157, mae:0.8705232739448547
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_96', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=96, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_96_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl96_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8353
+val 2785
+test 2785
+Epoch: 1, Steps: 261 | Train Loss: 0.4241006 Vali Loss: 1.5861667 Test Loss: 1.1309032
+Validation loss decreased (inf --> 1.586167).  Saving model ...
+Updating learning rate to 0.004
+Epoch: 2, Steps: 261 | Train Loss: 0.1932720 Vali Loss: 1.5053606 Test Loss: 1.2159219
+Validation loss decreased (1.586167 --> 1.505361).  Saving model ...
+Updating learning rate to 0.002
+Epoch: 3, Steps: 261 | Train Loss: 0.1249701 Vali Loss: 1.6496203 Test Loss: 1.2260323
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.001
+Epoch: 4, Steps: 261 | Train Loss: 0.0803443 Vali Loss: 1.6136954 Test Loss: 1.3071414
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.0005
+Epoch: 5, Steps: 261 | Train Loss: 0.0568287 Vali Loss: 1.6293904 Test Loss: 1.3408375
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_96_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl96_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2785
+mse:1.2124147415161133, mae:0.8386638760566711
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_192', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=192, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_192_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl192_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8257
+val 2689
+test 2689
+Epoch: 1, Steps: 258 | Train Loss: 0.3908736 Vali Loss: 1.6880823 Test Loss: 1.2262993
+Validation loss decreased (inf --> 1.688082).  Saving model ...
+Updating learning rate to 0.004
+Epoch: 2, Steps: 258 | Train Loss: 0.1556043 Vali Loss: 1.7661349 Test Loss: 1.2535436
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.002
+Epoch: 3, Steps: 258 | Train Loss: 0.0639253 Vali Loss: 1.8070498 Test Loss: 1.2793082
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.001
+Epoch: 4, Steps: 258 | Train Loss: 0.0334488 Vali Loss: 1.8415940 Test Loss: 1.2873245
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_192_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl192_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+mse:1.2268486022949219, mae:0.845332145690918
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_336', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=336, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_336_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl336_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8113
+val 2545
+test 2545
+Epoch: 1, Steps: 253 | Train Loss: 0.3847002 Vali Loss: 1.8771244 Test Loss: 1.1339343
+Validation loss decreased (inf --> 1.877124).  Saving model ...
+Updating learning rate to 0.004
+Epoch: 2, Steps: 253 | Train Loss: 0.1387674 Vali Loss: 2.0079279 Test Loss: 1.2794451
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.002
+Epoch: 3, Steps: 253 | Train Loss: 0.0615156 Vali Loss: 2.0293493 Test Loss: 1.3263810
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.001
+Epoch: 4, Steps: 253 | Train Loss: 0.0361301 Vali Loss: 1.9911441 Test Loss: 1.2998121
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_336_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl336_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2545
+mse:1.1351336240768433, mae:0.794781506061554
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_720', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=720, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.004, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_720_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl720_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.004_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 7729
+val 2161
+test 2161
+Epoch: 1, Steps: 241 | Train Loss: 0.3667035 Vali Loss: 2.0904822 Test Loss: 1.2456886
+Validation loss decreased (inf --> 2.090482).  Saving model ...
+Updating learning rate to 0.004
+Epoch: 2, Steps: 241 | Train Loss: 0.1093244 Vali Loss: 2.1894102 Test Loss: 1.3925033
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.002
+Epoch: 3, Steps: 241 | Train Loss: 0.0437636 Vali Loss: 2.1795928 Test Loss: 1.3780729
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.001
+Epoch: 4, Steps: 241 | Train Loss: 0.0268715 Vali Loss: 2.1786425 Test Loss: 1.3806555
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_720_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl720_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.004_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2161
+mse:1.2450202703475952, mae:0.8310639262199402
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_96', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=96, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.01, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_96_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl96_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.01_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8353
+val 2785
+test 2785
+Epoch: 1, Steps: 261 | Train Loss: 0.6285701 Vali Loss: 1.6419920 Test Loss: 1.1828259
+Validation loss decreased (inf --> 1.641992).  Saving model ...
+Updating learning rate to 0.01
+Epoch: 2, Steps: 261 | Train Loss: 0.3044361 Vali Loss: 1.4152616 Test Loss: 1.1529777
+Validation loss decreased (1.641992 --> 1.415262).  Saving model ...
+Updating learning rate to 0.005
+Epoch: 3, Steps: 261 | Train Loss: 0.2285707 Vali Loss: 1.4401219 Test Loss: 1.2546693
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.0025
+Epoch: 4, Steps: 261 | Train Loss: 0.1914239 Vali Loss: 1.4461489 Test Loss: 1.1821036
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.00125
+Epoch: 5, Steps: 261 | Train Loss: 0.1690109 Vali Loss: 1.4739926 Test Loss: 1.2020689
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_96_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl96_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.01_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2785
+mse:1.1536235809326172, mae:0.8161086440086365
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_192', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=192, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.01, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_192_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl192_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.01_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8257
+val 2689
+test 2689
+Epoch: 1, Steps: 258 | Train Loss: 0.5248537 Vali Loss: 1.6077552 Test Loss: 1.2049159
+Validation loss decreased (inf --> 1.607755).  Saving model ...
+Updating learning rate to 0.01
+Epoch: 2, Steps: 258 | Train Loss: 0.2300086 Vali Loss: 1.6185154 Test Loss: 1.0708559
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.005
+Epoch: 3, Steps: 258 | Train Loss: 0.1556464 Vali Loss: 1.6767526 Test Loss: 1.1480842
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.0025
+Epoch: 4, Steps: 258 | Train Loss: 0.1098167 Vali Loss: 1.6779051 Test Loss: 1.1829598
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_192_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl192_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.01_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2689
+mse:1.2104506492614746, mae:0.8101888298988342
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_336', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=336, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.01, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_336_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl336_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.01_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 8113
+val 2545
+test 2545
+Epoch: 1, Steps: 253 | Train Loss: 0.5636147 Vali Loss: 1.6444567 Test Loss: 1.1763970
+Validation loss decreased (inf --> 1.644457).  Saving model ...
+Updating learning rate to 0.01
+Epoch: 2, Steps: 253 | Train Loss: 0.2562438 Vali Loss: 1.6655248 Test Loss: 1.1809628
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.005
+Epoch: 3, Steps: 253 | Train Loss: 0.1623685 Vali Loss: 1.7281357 Test Loss: 1.2824932
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.0025
+Epoch: 4, Steps: 253 | Train Loss: 0.1112502 Vali Loss: 1.7219537 Test Loss: 1.3114222
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_336_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl336_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.01_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2545
+mse:1.1772860288619995, mae:0.8022758960723877
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+['/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/Long-Seq-Model', '/root/workspace/Long-Seq-Model', '/root/miniconda3/envs/mamba2/lib/python311.zip', '/root/miniconda3/envs/mamba2/lib/python3.11', '/root/miniconda3/envs/mamba2/lib/python3.11/lib-dynload', '/root/miniconda3/envs/mamba2/lib/python3.11/site-packages']
+/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/__init__.py
+Args in experiment:
+Namespace(is_training=1, train_only=False, model_id='ETTh1_Mamba2_RMS_192_720', model='Mamba2_RMS', data='ETTh1', root_path='./dataset/ETT-small', data_path='ETTh1.csv', features='M', target='OT', freq='h', checkpoints='/root/autodl-tmp/checkpoints/', seq_len=192, label_len=192, pred_len=720, d_state=16, d_conv=2, individual=False, embed_type=2, enc_in=7, dec_in=7, c_out=7, d_model=512, n_heads=8, e_layers=2, d_layers=3, d_ff=2048, moving_avg=25, factor=1, distil=True, dropout=0.05, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=60, batch_size=32, patience=3, learning_rate=0.01, des='Exp', loss='mse', lradj='type1', use_amp=False, use_gpu=True, gpu=0, use_multi_gpu=False, devices='0', test_flop=True)
+Use GPU: cuda:0
+>>>>>>>start training : ETTh1_Mamba2_RMS_192_720_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl720_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.01_type1_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 7729
+val 2161
+test 2161
+Epoch: 1, Steps: 241 | Train Loss: 0.5686328 Vali Loss: 2.0179956 Test Loss: 1.2332611
+Validation loss decreased (inf --> 2.017996).  Saving model ...
+Updating learning rate to 0.01
+Epoch: 2, Steps: 241 | Train Loss: 0.2273906 Vali Loss: 2.0563240 Test Loss: 1.3003819
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.005
+Epoch: 3, Steps: 241 | Train Loss: 0.0989946 Vali Loss: 2.2016356 Test Loss: 1.3233614
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 0.0025
+Epoch: 4, Steps: 241 | Train Loss: 0.0508553 Vali Loss: 2.2163780 Test Loss: 1.3001184
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : ETTh1_Mamba2_RMS_192_720_Mamba2_RMS_ETTh1_ftM_sl192_ll192_pl720_dm512_nh8_el2_dl3_df2048_fc1_ebtimeF_dtTrue_Exp_16_2_32_0.01_type1_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 2161
+mse:1.2335871458053589, mae:0.8430618047714233

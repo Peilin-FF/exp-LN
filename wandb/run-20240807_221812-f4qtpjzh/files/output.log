@@ -1,0 +1,65 @@
+
+[34m[1mwandb[39m[22m: logging graph, to disable use `wandb.watch(log_graph=False)`
+>>>>>>>start training : electricity_Mamba2_LN_192_96_4e-3_Mamba2_LN_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl2_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.004_type8_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18125
+val 2537
+test 5165
+Exception ignored in: <function _MultiProcessingDataLoaderIter.__del__ at 0x7ffa284ae2a0>
+Traceback (most recent call last):
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/torch/utils/data/dataloader.py", line 1478, in __del__
+    def __del__(self):
+KeyboardInterrupt:
+Traceback (most recent call last):
+  File "/root/Long-Seq-Model/run_exp.py", line 131, in <module>
+    exp.train(setting)
+  File "/root/Long-Seq-Model/exp/exp_main.py", line 143, in train
+    loss.backward()
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/torch/_tensor.py", line 487, in backward
+    torch.autograd.backward(
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/torch/autograd/__init__.py", line 200, in backward
+    Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/torch/autograd/function.py", line 274, in apply
+    return user_fn(self, *args)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/ops/triton/ssd_combined.py", line 558, in backward
+    dx, ddt, dA, dB, dC, dD, dz, ddt_bias, dinitial_states = _mamba_chunk_scan_combined_bwd(dout, x, dt, A, B, C, out, ctx.chunk_size, D=D, z=z, dt_bias=dt_bias, initial_states=initial_states, dfinal_states=dfinal_states, seq_idx=seq_idx, dt_softplus=ctx.dt_softplus, dt_limit=ctx.dt_limit)
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/ops/triton/ssd_combined.py", line 444, in _mamba_chunk_scan_combined_bwd
+    ddt_given, dA, ddt_bias = _chunk_cumsum_bwd(ddA, ddt, dt_in, A, dt_bias=dt_bias, dt_softplus=dt_softplus, dt_limit=dt_limit, ddt=ddt_given)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/ops/triton/ssd_chunk_state.py", line 709, in _chunk_cumsum_bwd
+    _chunk_cumsum_bwd_kernel[grid_chunk_cs](
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/runtime/jit.py", line 167, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/runtime/autotuner.py", line 143, in run
+    timings = {config: self._bench(*args, config=config, **kwargs) for config in pruned_configs}
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/runtime/autotuner.py", line 143, in <dictcomp>
+    timings = {config: self._bench(*args, config=config, **kwargs) for config in pruned_configs}
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/runtime/autotuner.py", line 122, in _bench
+    return do_bench(kernel_call, warmup=self.warmup, rep=self.rep, quantiles=(0.5, 0.2, 0.8))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/testing.py", line 102, in do_bench
+    fn()
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/runtime/autotuner.py", line 110, in kernel_call
+    self.fn.run(
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/runtime/jit.py", line 416, in run
+    self.cache[device][key] = compile(
+                              ^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/compiler/compiler.py", line 200, in compile
+    so_path = backend.make_launcher_stub(src, metadata)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/compiler/backends/cuda.py", line 216, in make_launcher_stub
+    return make_stub(src.name, src.signature, constants, ids, enable_warp_specialization=enable_warp_specialization)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/compiler/make_launcher.py", line 37, in make_stub
+    so = _build(name, src_path, tmpdir)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/common/build.py", line 106, in _build
+    ret = subprocess.check_call(cc_cmd)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['/usr/bin/gcc', '/tmp/tmpt_ds5te6/main.c', '-O3', '-I/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/common/../third_party/cuda/include', '-I/root/miniconda3/envs/mamba2/include/python3.11', '-I/tmp/tmpt_ds5te6', '-shared', '-fPIC', '-lcuda', '-o', '/tmp/tmpt_ds5te6/_chunk_cumsum_bwd_kernel.cpython-311-x86_64-linux-gnu.so', '-L/usr/lib/x86_64-linux-gnu', '-L/usr/lib/x86_64-linux-gnu']' died with <Signals.SIGINT: 2>.

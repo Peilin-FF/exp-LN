@@ -1,0 +1,73 @@
+
+[34m[1mwandb[39m[22m: logging graph, to disable use `wandb.watch(log_graph=False)`
+>>>>>>>start training : electricity_Mamba2_LN_192_96_4e-3_Mamba2_LN_custom_ftM_sl192_ll192_pl96_dm32_nh8_el2_dl2_df2048_fc1_ebtimeF_dtTrue_Exp_32_2_32_0.004_type8_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 18125
+val 2537
+test 5165
+Traceback (most recent call last):
+  File "/root/Long-Seq-Model/run_exp.py", line 131, in <module>
+    exp.train(setting)
+  File "/root/Long-Seq-Model/exp/exp_main.py", line 127, in train
+    outputs = self.model(dec_inp, batch_y_mark)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Long-Seq-Model/models/Mamba2_LN.py", line 50, in forward
+    x = self.mamba_layers[i](x)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Long-Seq-Model/layers/Mamba_Family.py", line 65, in forward
+    x = x + self.mamba2(x)
+            ^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/Long-Seq-Model/models/mamba_ssm/Mamba2_LN.py", line 224, in forward
+    y = mamba_chunk_scan_combined(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/ops/triton/ssd_combined.py", line 581, in mamba_chunk_scan_combined
+    return MambaChunkScanCombinedFn.apply(x, dt, A, B, C, chunk_size, D, z, dt_bias, initial_states, seq_idx, cu_seqlens, dt_softplus, dt_limit, return_final_states, return_varlen_states)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/ops/triton/ssd_combined.py", line 540, in forward
+    out, out_x, dt_out, dA_cumsum, states, final_states, *rest = _mamba_chunk_scan_combined_fwd(x, dt, A, B, C, chunk_size, D=D, z=z, dt_bias=dt_bias, initial_states=initial_states, seq_idx=seq_idx, cu_seqlens=cu_seqlens, dt_softplus=dt_softplus, dt_limit=dt_limit)
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/ops/triton/ssd_combined.py", line 324, in _mamba_chunk_scan_combined_fwd
+    out, out_x = _chunk_scan_fwd(CB, x, dt, dA_cumsum, C, states, D=D, z=z, seq_idx=seq_idx)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/mamba_ssm/ops/triton/ssd_chunk_scan.py", line 1257, in _chunk_scan_fwd
+    _chunk_scan_fwd_kernel[grid](
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/runtime/jit.py", line 167, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/runtime/autotuner.py", line 143, in run
+    timings = {config: self._bench(*args, config=config, **kwargs) for config in pruned_configs}
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/runtime/autotuner.py", line 143, in <dictcomp>
+    timings = {config: self._bench(*args, config=config, **kwargs) for config in pruned_configs}
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/runtime/autotuner.py", line 122, in _bench
+    return do_bench(kernel_call, warmup=self.warmup, rep=self.rep, quantiles=(0.5, 0.2, 0.8))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/testing.py", line 102, in do_bench
+    fn()
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/runtime/autotuner.py", line 110, in kernel_call
+    self.fn.run(
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/runtime/jit.py", line 416, in run
+    self.cache[device][key] = compile(
+                              ^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/compiler/compiler.py", line 193, in compile
+    next_module = compile_ir(module, metadata)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/compiler/backends/cuda.py", line 201, in <lambda>
+    stages["cubin"] = lambda src, metadata: self.make_cubin(src, metadata, options, self.capability)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/envs/mamba2/lib/python3.11/site-packages/triton/compiler/backends/cuda.py", line 194, in make_cubin
+    return compile_ptx_to_cubin(src, ptxas, capability, opt.enable_fp_fusion)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: `ptxas` failed with error code 0:
